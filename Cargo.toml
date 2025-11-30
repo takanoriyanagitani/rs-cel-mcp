@@ -3,6 +3,17 @@ name = "rs-cel-mcp"
 version = "0.1.0"
 edition = "2024"
 
+description = "CEL MCP Server"
+license = "Apache-2.0"
+repository = "https://github.com/takanoriyanagitani/rs-cel-mcp"
+homepage = "https://github.com/takanoriyanagitani/rs-cel-mcp"
+documentation = "https://docs.rs/rs-cel-mcp/latest"
+keywords = ["cel", "mcp", "llm", "ai"]
+
+exclude = [
+	"cel-mcp",
+]
+
 [lints.rust]
 unsafe_code = "forbid"
 
