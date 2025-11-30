@@ -1,0 +1,60 @@
+[package]
+name = "rs-cel-mcp"
+version = "0.1.0"
+edition = "2024"
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+unwrap_used = "deny"
+expect_used = "deny"
+
+[[bin]]
+name = "cel-mcp"
+
+[dependencies.clap]
+version = "4"
+features = ["derive"]
+
+[dependencies.rmcp]
+version = "0.9"
+default-features = false
+features = [
+	"base64",
+	"macros",
+	"server",
+	"transport-io",
+	"transport-streamable-http-server",
+]
+
+[dependencies.cel]
+version = "0.11"
+default-features = false
+features = [
+	"chrono",
+	"regex",
+	"json",
+]
+
+[dependencies.tokio]
+version = "1"
+default-features = false
+features = [
+	"macros",
+	"rt-multi-thread",
+	"signal",
+]
+
+[dependencies.axum]
+version = "0.8"
+
+[dependencies.tracing]
+version = "0.1"
+
+[dependencies.tokio-util]
+version = "0.7"
+
+[dependencies.tracing-subscriber]
+version = "0.3"
+features = ["env-filter"]
