@@ -29,7 +29,7 @@ version = "4"
 features = ["derive"]
 
 [dependencies.rmcp]
-version = "0.9"
+version = "1.4"
 default-features = false
 features = [
 	"base64",
